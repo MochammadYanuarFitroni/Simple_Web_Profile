@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+body{
+    background-color: #002b80;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+header{
+    display: inline;
+}
+
+.logo{
+    color: white;
+    text-align: center;
+    /* border: 1px solid; */
+    padding: 14px 10px;
+    margin-left: 30px;
+    float: left;
+}
+
+nav{
+    overflow: auto;
+    height: 60px;
+    background-color: #1a66ff;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    /* border: 1px solid; */
+    padding: 19px 10px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+a:hover{
+    color: #660066;
+}
+
+#home .container,
+#about .container .titleText,
+#portfolio .container .titleText,
+#skill .container .titleText{
+    padding-top: 70px;
+    color: #1a66ff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#home .container{
+    padding-top: 80px;
+    padding-bottom: 30px;
+} 
+#home .container img{
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #1a66ff;
+    padding-top: 0;
+}
+
+#home .container h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+#home .container h4,h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#about .container{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.about-me{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.about-me p{
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+.about-me span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00e6e6;
+}
+.about-me a{
+    text-align: center;
+}
+.about-me button{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 0px;
+    background-color: #1a66ff;
+    transition: 0.3s;
+}
+.about-me button:hover{
+    background-color: #ff6666;
+    cursor: pointer;
+}
+
+#skill .container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.skills p{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0 5px 0;
+}
+.skills .bar{
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00e6e6;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+.bar .fill{
+    height: 20px;
+    background-color: #ff6666;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 70%;
+}
+.js{
+    width: 65%;
+}
+.csh{
+    width: 85%;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* overflow: auto; */
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.left .imgA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left .imgB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgA img, .imgB img{
+    height: 200px;
+}
+.right .imgC img,.imgD img{
+    height: 200px;
+    padding-left: 5px;
+}
+.left, .right{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+.left p, .right p{
+    padding: 10px 0 10px 0;
+}
+
+.imgA, .imgC, .imgD{
+    padding: 20px 0 20px 0;
+}
+.imgA img, .imgC img, .imgD img{
+    border-radius: 10px;
+}
+.imgB button{
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 0px;
+    background-color: #1a66ff;
+    transition: 0.3s;
+}
+.imgB button:hover{
+    background-color: #ff6666;
+    cursor: pointer;
+}
+.imgB p{
+    padding-bottom: 0;
+}
+.imgB img{
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.content{
+    float: left;
+    width: 75%;
+}
+aside{
+    float: right;
+    width: 25%;
+}
+aside .personal-detail{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+aside .personal-detail p{
+    padding: 20px 0 5px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+aside .personal-detail figure img{
+    padding: 5px 0 10px 0;
+    height: 200px;
+    border-radius: 10px;
+}
+aside .personal-detail table tr td{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00e6e6;
+    padding-right: 25px;
+    text-align: left;
+}
+aside .personal-detail table tr th{
+    font-size: 0.8em;
+    color: white;
+    text-align: left;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+.menuMobile{
+    padding-top: 5px;
+    display: none;
+}
+nav .menuMobile{
+    float: right;
+}
+.menuMobile label{
+    background-color: #1a66ff;
+}
+.menuMobile label img{
+    width: 50px;
+    height: 50px;
+    background-color: #1a66ff;
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+    background-color: rgba(22, 22, 61, 0.9);
+    transition: 0.3s;
+}
+.sidebar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: 0.3s;
+}
+.sidebar ul a li:hover{
+    background-color: #ff6666;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #1a66ff;
+    color: white;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    header ul li{
+        display: none;
+    }
+    .menuMobile{
+        display: block;
+        margin-right: 30px;
+    }
+    .about-me, .personal, .imgA, .imgB{
+        width: 100%;
+    }
+    .content, aside{
+        width: 100%;
+        padding: 0;
+    }
+    .container, aside .personal-detail{
+        box-shadow: none;
+        border-radius: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .personal{
+        padding-top: 30px;
+    }
+    table{
+        margin: auto;
+    }
+}
